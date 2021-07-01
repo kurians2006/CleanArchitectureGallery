@@ -9,7 +9,7 @@ import Foundation
 import Moya
 
 enum NetworkService{
-    case getPhotos
+    case getPhotos(page: Int)
 }
 
 extension NetworkService: TargetType, CachePolicyGettableType{
@@ -42,8 +42,10 @@ extension NetworkService: TargetType, CachePolicyGettableType{
     
     var task: Task {
         switch self {
-        case .getPhotos:
-            return .requestPlain
+        case .getPhotos(let page):
+            var parameters = Dictionary<String, Int>()
+            parameters["page"] = page
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         }
     }
     

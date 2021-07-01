@@ -13,7 +13,7 @@ enum GalleryModels {
 
     enum FetchPhotos {
         struct Request {
-            
+            var page : Int
         }
 
         struct Response {

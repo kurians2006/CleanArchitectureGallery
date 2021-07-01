@@ -35,7 +35,7 @@ class GalleryInteractor: GalleryBusinessLogic, GalleryDataStore {
         var response: Models.FetchPhotos.Response!
         var er: Models.PhotoGalleryError!
         
-        worker.getAllPhotos().done{ photosList in
+        worker.getAllPhotos(page: request.page).done{ photosList in
             response = Models.FetchPhotos.Response(photos: photosList.hits)
         }.catch { error in
             switch error{

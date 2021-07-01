@@ -25,6 +25,8 @@ class GalleryViewController: UIViewController, GalleryDisplayLogic {
     typealias Models = GalleryModels
     var router: (NSObjectProtocol & GalleryRoutingLogic & GalleryDataPassing)?
     var interactor: GalleryBusinessLogic?
+    var page = 1
+    
     
     private var isAlbumListOpen = false
     private var images: [Photo]?
@@ -90,7 +92,7 @@ class GalleryViewController: UIViewController, GalleryDisplayLogic {
     func setupFetchPhotos() {
         SwiftSpinner.useContainerView(photoCollection)
         SwiftSpinner.show("Loading...")
-        let request = Models.FetchPhotos.Request()
+        let request = Models.FetchPhotos.Request(page: page)
         interactor?.fetchPhotos(request: request)
     }
     
@@ -108,7 +110,6 @@ class GalleryViewController: UIViewController, GalleryDisplayLogic {
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
-
 }
 
 
@@ -140,5 +141,16 @@ extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     
+}
+
+extension GalleryViewController: UIScrollViewDelegate {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView == self.photoCollection {
+            if scrollView.contentOffset.y < -100 {
+                page = 1
+                setupFetchPhotos()
+            }
+        }
+    }
 }
 
