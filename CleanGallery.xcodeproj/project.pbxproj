@@ -30,6 +30,7 @@
 		A1FA427F268DE33200BEB464 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA427E268DE33200BEB464 /* String+Extensions.swift */; };
 		A1FA4282268E140700BEB464 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA4280268E140700BEB464 /* ThumbnailCell.swift */; };
 		A1FA4283268E140700BEB464 /* ThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1FA4281268E140700BEB464 /* ThumbnailCell.xib */; };
+		A1FA4286268ED4FD00BEB464 /* GalleryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA4285268ED4FD00BEB464 /* GalleryInteractorTests.swift */; };
 		F890D08F92EA9D62D4EC7749 /* Pods_CleanGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7921CB1B3C13333CB8E44826 /* Pods_CleanGallery.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		A1FA427E268DE33200BEB464 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		A1FA4280268E140700BEB464 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 		A1FA4281268E140700BEB464 /* ThumbnailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCell.xib; sourceTree = "<group>"; };
+		A1FA4285268ED4FD00BEB464 /* GalleryInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractorTests.swift; sourceTree = "<group>"; };
 		AFD45FA1D6705AB60DF9FEBA /* Pods-CleanGallery-CleanGalleryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanGallery-CleanGalleryUITests.debug.xcconfig"; path = "Target Support Files/Pods-CleanGallery-CleanGalleryUITests/Pods-CleanGallery-CleanGalleryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C14002B456679AFE37E4A288 /* Pods_CleanGallery_CleanGalleryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanGallery_CleanGalleryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD91571D4B44B8277B131AB /* Pods-CleanGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanGalleryTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanGalleryTests/Pods-CleanGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		A1FA4247268DBE4B00BEB464 /* CleanGalleryTests */ = {
 			isa = PBXGroup;
 			children = (
+				A1FA4284268ED4D200BEB464 /* GalleryTest */,
 				A1FA4248268DBE4B00BEB464 /* CleanGalleryTests.swift */,
 				A1FA424A268DBE4B00BEB464 /* Info.plist */,
 			);
@@ -267,6 +270,14 @@
 				A1FA427A268DE24000BEB464 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A1FA4284268ED4D200BEB464 /* GalleryTest */ = {
+			isa = PBXGroup;
+			children = (
+				A1FA4285268ED4FD00BEB464 /* GalleryInteractorTests.swift */,
+			);
+			path = GalleryTest;
 			sourceTree = "<group>";
 		};
 		CEBF1D1CCB0298D35865448D /* Frameworks */ = {
@@ -541,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FA4249268DBE4B00BEB464 /* CleanGalleryTests.swift in Sources */,
+				A1FA4286268ED4FD00BEB464 /* GalleryInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
