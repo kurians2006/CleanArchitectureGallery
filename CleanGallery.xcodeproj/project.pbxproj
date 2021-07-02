@@ -84,6 +84,7 @@
 		A1FA4280268E140700BEB464 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 		A1FA4281268E140700BEB464 /* ThumbnailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCell.xib; sourceTree = "<group>"; };
 		A1FA4285268ED4FD00BEB464 /* GalleryInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractorTests.swift; sourceTree = "<group>"; };
+		A1FA4288268EDCBD00BEB464 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AFD45FA1D6705AB60DF9FEBA /* Pods-CleanGallery-CleanGalleryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanGallery-CleanGalleryUITests.debug.xcconfig"; path = "Target Support Files/Pods-CleanGallery-CleanGalleryUITests/Pods-CleanGallery-CleanGalleryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C14002B456679AFE37E4A288 /* Pods_CleanGallery_CleanGalleryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanGallery_CleanGalleryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD91571D4B44B8277B131AB /* Pods-CleanGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanGalleryTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanGalleryTests/Pods-CleanGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		A1FA4225268DBE4800BEB464 = {
 			isa = PBXGroup;
 			children = (
+				A1FA4288268EDCBD00BEB464 /* README.md */,
 				A1FA4230268DBE4800BEB464 /* CleanGallery */,
 				A1FA4247268DBE4B00BEB464 /* CleanGalleryTests */,
 				A1FA4252268DBE4B00BEB464 /* CleanGalleryUITests */,
